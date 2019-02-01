@@ -40,7 +40,7 @@ colnames(train_test_data) <- c("Subject", features[, 2], "Labels")
 measurements <- grepl("Subject|Labels|mean|std", colnames(train_test_data))
 train_test_data <- train_test_data[, measurements]
 
-# 3.Extracts only the measurements on the mean and standard deviation for each measurement.
+# 3.Uses descriptive activity names to name the activities in the data set.
 train_test_data$Labels <- factor(train_test_data$Labels, levels = activityLabels[, 1], labels = activityLabels[, 2])
 
 # 4.Appropriately labels the data set with descriptive variable names.
