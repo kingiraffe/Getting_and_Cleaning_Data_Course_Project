@@ -6,7 +6,7 @@ X_test: 2947ros, 561cols, read as testSet
 y_train/y_test: Labels, from 1 to 6, read as trainLabels/testLabels  
 y_train: 7352rows, 1cols  
 y_test: 2947rows, 1cols  
-features: 561 signals, correspond to 561cols in X_train & X_test  
+features: 561 variables, correspond to 561cols in X_train & X_test  
 activity_labels: 6rows, 2cols, correspond to Labels in y_train & y_test, 1st col is "activityId", 2nd col is "activityLabel"  
 
 merge by cols: (trainSubjects, trainSet, trainLabels) & (testSubjects, testSet, testLabels) >> trainData & testData  
