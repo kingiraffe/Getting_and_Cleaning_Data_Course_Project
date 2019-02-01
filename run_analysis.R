@@ -72,4 +72,4 @@ activity_subject <- train_test_data %>%
   summarize_each(funs(mean))
 
 #Create a second, independent tidy set
-write.table(activity_subject, "tidy_set.txt", row.names = TRUE, quote = FALSE)
+write.table(activity_subject, "tidy_set.txt", row.names = FALSE, quote = FALSE)
